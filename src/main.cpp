@@ -22,7 +22,7 @@ const unsigned int height = 800;
 GLfloat vertices[] =
 { 
  
- 		-0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+ 		-0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f,
          0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
          0.5f,  0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
          0.5f,  0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
@@ -34,7 +34,7 @@ GLfloat vertices[] =
          0.5f,  0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
          0.5f,  0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
         -0.5f,  0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f, 
+        -0.5f, -0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 
 
         -0.5f,  0.5f,  0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 0.0f,
         -0.5f,  0.5f, -0.5f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,
@@ -195,7 +195,7 @@ double crntTime = glfwGetTime();
 
 
 		model = glm::rotate(model, glm::radians(rotation), glm::vec3(1.0f, 1.0f, 1.0f));
-		view= glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+		view= glm::translate(view, glm::vec3(0.0f, 0.0f, -5.0f));
 		proj = glm::perspective(glm::radians(45.0f), (float)width / height, 0.1f, 100.0f);
 
 		// Outputs the matrices into the Vertex Shader
